@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+     Agendamento
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="formGroup">
+      <ion-item>
+          <ion-label floating>Nome:</ion-label>
+          <ion-input formControlName="nome" type="text"></ion-input>
+        </ion-item>
+      <ion-item>
+          <ion-label floating>Sobrenome:</ion-label>
+          <ion-input formControlName="sobrenome" type="text"></ion-input>
+        </ion-item>
+    <ion-item>
+      <ion-label floating>Data:</ion-label>
+      <ion-input formControlName="data" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label floating>Horário:</ion-label>
+        <ion-input formControlName="horario" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label floating>Bairro:</ion-label>
+          <ion-input formControlName="bairro" type="text"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label floating>Rua:</ion-label>
+            <ion-input formControlName="rua" type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+              <ion-label floating>Cep:</ion-label>
+              <ion-input formControlName="cep" type="text"></ion-input>
+            </ion-item>
+       
+            <ion-button icon-left size="medium" expand="full" shape="round" color="success" tappable (click)="agendar()">Agendar</ion-button>
+  </form>
+</ion-content>

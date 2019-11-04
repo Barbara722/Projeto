@@ -17,10 +17,33 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
-      url: '/list',
-      icon: 'list'
-    }
+      title: 'Cadastre-se',
+      url: '/cliente-cadastro',
+      icon: 'contacts'
+    },
+    {
+      title: 'Login',
+      url: '/login',
+      icon: 'contact'
+    },
+    
+    {
+      title: 'Perfil',
+      url: '/perfil',
+      icon: 'md-contact'
+    },
+    {
+      title: 'Agendamento',
+      url: '/agendamento',
+      icon: 'calendar'
+    },
+    
+    {
+      title: 'Logoff',
+      url: '/logoff',
+      icon: 'contacts'
+    },
+    
   ];
 
   constructor(

@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+       Login
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+
+<ion-content padding>
+<ion-list>
+  <ion-item>
+    <ion-label fixed>E-mail:</ion-label>
+    <ion-input fixed="text" value=""[(ngModel)]="email"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label fixed>Senha:</ion-label>
+      <ion-input fixed="text" [(ngModel)]="senha"></ion-input>
+    </ion-item>
+</ion-list>
+<ion-button icon-left size="medium" expand="full" shape="round" color="success" tappable (click)="login()">Entrar</ion-button>
+    <ion-button icon-left size="medium" expand="full" shape="round" tappable (click)="goNovoUsuario()">Novo Usuário</ion-button>
+    <ion-button icon-left size="medium" expand="full" shape="round" color="danger" tappable (click)="goNovaSenha()">Redefinir Senha</ion-button>
+
+</ion-content>
